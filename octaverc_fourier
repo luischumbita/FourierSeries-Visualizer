@@ -1,0 +1,23 @@
+# Archivo de configuración de Octave para Fourier Clase
+# Colocar este archivo en ~/.octaverc o ejecutar: source octaverc_fourier
+
+# Cargar paquete de señales automáticamente
+try
+    pkg load signal;
+    fprintf('✅ Paquete de señales cargado automáticamente\n');
+catch
+    fprintf('⚠️  Advertencia: No se pudo cargar el paquete de señales\n');
+    fprintf('   Ejecuta: pkg install -forge signal\n');
+end
+
+# Configurar formato de salida
+format long g;
+
+# Configurar gráficos
+graphics_toolkit('gnuplot');
+
+# Mensaje de bienvenida
+fprintf('\n🎓 Octave Fourier Clase - Versión Mejorada V3.0\n');
+fprintf('📚 Para usar: fourier_octave_enhanced\n');
+fprintf('🎬 Para demo: demo_enhanced_functions\n');
+fprintf('💡 Para ayuda: help fourier_octave_enhanced\n\n'); 
